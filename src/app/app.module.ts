@@ -9,6 +9,12 @@ import { ProductDescriptionComponent } from './product-description/product-descr
 import { ProductService } from './product.service';
 import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { RouterModule, ROUTES } from '@angular/router';
+
+const appRoutes :Routes = [
+  
+];
+
 
 @NgModule({
   declarations: [
@@ -22,8 +28,12 @@ import { ProductListComponent } from './product-list/product-list.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    RouterModule,
+    ROUTES,
     // ProductService
   ],
+
+
   providers: [ProductService],
   bootstrap: [AppComponent]
 })
